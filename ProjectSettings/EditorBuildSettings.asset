@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/PassthroughTesting.unity
+    guid: a824c0653583d874097c2b5cd44bf13f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5cecc86a729a7694a8503da348322a97, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 00d9f9c1da5b53649947a1ba689073b9, type: 2}
