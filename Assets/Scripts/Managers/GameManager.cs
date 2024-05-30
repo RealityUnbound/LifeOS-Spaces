@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Dependencies")]
+    [SerializeField] RoomManager roomManager;
+    [SerializeField] SpacesManager spacesManager;
+    [SerializeField] InputManager inputManager;
+    [SerializeField] AppManager appManager;
+
     // Start is called before the first frame update
     void Start()
     {
