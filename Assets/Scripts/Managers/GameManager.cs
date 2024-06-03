@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -9,6 +10,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] SpacesManager spacesManager;
     [SerializeField] InputManager inputManager;
     [SerializeField] AppManager appManager;
+
+    [Header("Scene Management")]
+    [SerializeField] SceneAsset currentScene;
+    private int sceneCount;
+    private int currentSceneIndex;
+
 
     // Start is called before the first frame update
     void Start()

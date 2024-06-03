@@ -15,4 +15,15 @@ public class PoseManager : MonoBehaviour
     {
         
     }
+
+    // Recognizes and Validates when the pose and gesture for Swiping Right occurs
+    private void SpaceSwipeRight()
+    {
+        
+    }
+    // Recognizes and Validates when the pose and gesture for Swiping Left occurs
+    private void SpaceSwipeLeft()
+    {
+
+    }
 }
