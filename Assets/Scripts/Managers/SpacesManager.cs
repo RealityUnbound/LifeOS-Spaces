@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +15,8 @@ public class SpacesManager : MonoBehaviour
     private UnityEngine.SceneManagement.Scene leftSpace;
     private UnityEngine.SceneManagement.Scene rightSpace;
     //public List<SceneAsset> spaces = new List<SceneAsset>(); // Deprecated for SceneManager.GetSceneByName()
+
+    Hashtable spaces;
 
     private void Awake()
     {
