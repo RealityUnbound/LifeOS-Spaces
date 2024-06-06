@@ -21,7 +21,7 @@ public class PoseManager : MonoBehaviour
     // Recognizes and Validates when the pose and gesture for Swiping Right occurs
     private void SpaceSwipeRight()
     {
-        if (inputManager.)
+        if (rightPose)
         {
 
         }

@@ -55,7 +55,7 @@ public class SpacesManager : MonoBehaviour
         SceneManager.LoadSceneAsync(newScene.buildIndex);
     }
 
-    public Scene GetRightSpace(){ return rightSpace; }
+    public Scene GetRightSpace() { return rightSpace; }
     public Scene GetLeftSpace() { return leftSpace; }
     public Scene GetEmptySpace() { return emptySpace; }
 
