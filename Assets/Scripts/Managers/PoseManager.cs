@@ -19,27 +19,27 @@ public class PoseManager : MonoBehaviour
     }
 
     // Recognizes and Validates when the pose and gesture for Swiping Right occurs
-    private void SpaceSwipeRight()
-    {
-        if (SwipeRightPose.ActiveStateGroup())
-        {
-            inputManager.SpaceSwapRight();
-        }
-        else
-        {
+    //private void SpaceSwipeRight()
+    //{
+    //    if (SwipeRightPose.ActiveStateGroup.Active)
+    //    {
+    //        inputManager.SpaceSwapRight();
+    //    }
+    //    else
+    //    {
 
-        }
-    }
-    // Recognizes and Validates when the pose and gesture for Swiping Left occurs
-    private void SpaceSwipeLeft()
-    {
-        if (SwipeLeftPose.ActiveStates())
-        {
+    //    }
+    //}
+    //// Recognizes and Validates when the pose and gesture for Swiping Left occurs
+    //private void SpaceSwipeLeft()
+    //{
+    //    if (SwipeLeftPose.ActiveStates())
+    //    {
 
-        }
-        else
-        {
+    //    }
+    //    else
+    //    {
 
-        }
-    }
+    //    }
+    //}
 }
