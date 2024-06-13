@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class SceneState : MonoBehaviour
 {
+    /// <summary>
+    /// The scene's elements, positions, and state
+    /// information will be stored here
+    /// </summary>
+    
+
     // Start is called before the first frame update
     void Start()
     {

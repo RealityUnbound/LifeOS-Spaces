@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
     private int sceneCount;
     private int currentSceneIndex;
 
+    [SerializeField] SceneAsset lScene;
+    [SerializeField] SceneAsset rScene;
+    [SerializeField] SceneAsset passthroughScene;
 
     // Start is called before the first frame update
     void Start()
