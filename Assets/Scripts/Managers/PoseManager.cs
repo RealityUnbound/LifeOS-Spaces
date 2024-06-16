@@ -39,6 +39,7 @@ public class PoseManager : MonoBehaviour
         if (swipeLeftGesture.Active)
         {
             inputManager.SpaceSwapLeft();
+
         }
         else
         {
