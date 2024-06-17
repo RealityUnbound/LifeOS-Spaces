@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SpacesManager : MonoBehaviour
 {
     public static SpacesManager instance;
+    [SerializeField] GameManager gameManager;
 
     [Header("Spaces Set Up")]
-    [SerializeField] Scene emptySpace;
-    [SerializeField] Scene leftSpace;
-    [SerializeField] Scene rightSpace;
-
     private Scene currentSpace;
+    [SerializeField] SceneAsset lScene;
+    [SerializeField] SceneAsset rScene;
+    [SerializeField] SceneAsset passthroughScene;
+
+    
 
     //[SerializeField] SceneAsset scene1;
     //private SceneAsset currentSpace;
