@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.darktable.xrgizmos": "file:C:/Users/seans/Downloads/XRGizmos-main/XRGizmos-main",
+    "com.darktable.xrgizmos": "https://github.com/darktable/XRGizmos.git",
     "com.meta.xr.sdk.all": "63.0.0",
     "com.meta.xr.sdk.interaction.ovr.samples": "63.0.0",
     "com.unity.collab-proxy": "2.3.1",

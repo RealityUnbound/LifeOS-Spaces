@@ -19,19 +19,19 @@ public class InputManager : MonoBehaviour
 
     public void SpaceSwapRight()
     {
-        spacesManager.SpaceSwap(spacesManager.GetRightSpace());
+        //spacesManager.SpaceSwap(spacesManager.GetRightSpace());
         //TODO: Have transition (perhaps a wipe) between scenes
     }
     public void SpaceSwapLeft() 
     {
-        spacesManager.SpaceSwap(spacesManager.GetRightSpace());
+        //spacesManager.SpaceSwap(spacesManager.GetRightSpace());
         //TODO: Have transition (perhaps a wipe) between scenes
     }
 
     // Removes all elements of a scene from showing allowing for full pass-through
     public void HideAllSpaces()
     {
-        spacesManager.SpaceSwap(spacesManager.GetEmptySpace());
+        //spacesManager.SpaceSwap(spacesManager.GetEmptySpace());
         //TODO: Have transition (perhaps a fade or shrink) between scenes
 
     }

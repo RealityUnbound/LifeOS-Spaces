@@ -1,10 +1,11 @@
 {
   "dependencies": {
     "com.darktable.xrgizmos": {
-      "version": "file:C:/Users/seans/Downloads/XRGizmos-main/XRGizmos-main",
+      "version": "https://github.com/darktable/XRGizmos.git",
       "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "source": "git",
+      "dependencies": {},
+      "hash": "558f23b6ed48f7aabca66e190dac1a6bcb37bce8"
     },
     "com.meta.xr.mrutilitykit": {
       "version": "63.0.0",

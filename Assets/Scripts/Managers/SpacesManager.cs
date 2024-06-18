@@ -9,7 +9,7 @@ public class SpacesManager : MonoBehaviour
     public static SpacesManager instance;
     [SerializeField] GameManager gameManager;
 
-    [Header("Spaces Set Up")]
+    //[Header("Spaces Set Up")]
     private Scene currentSpace;
     [SerializeField] SceneAsset lScene;
     [SerializeField] SceneAsset rScene;
@@ -61,9 +61,9 @@ public class SpacesManager : MonoBehaviour
         SceneManager.LoadSceneAsync(newScene.buildIndex);
     }
 
-    public Scene GetRightSpace() { return rightSpace; }
-    public Scene GetLeftSpace() { return leftSpace; }
-    public Scene GetEmptySpace() { return emptySpace; }
+    public SceneAsset GetRightSpace() { return rScene; }
+    public SceneAsset GetLeftSpace() { return lScene; }
+    public SceneAsset GetEmptySpace() { return passthroughScene; }
 
 
 }
