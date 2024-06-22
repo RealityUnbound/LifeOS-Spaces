@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/PassthroughTesting.unity
     guid: a824c0653583d874097c2b5cd44bf13f
-  - enabled: 0
-    path: Assets/Scenes/VideoEditingScene.unity
-    guid: 2c4ca3282582ce24d9528d278dea4401
   - enabled: 1
     path: Assets/Scenes/ProductivityScene.unity
     guid: d3ee038ef9441124986e9640125966cc
+  - enabled: 1
+    path: Assets/Scenes/VideoEditingScene.unity
+    guid: 2c4ca3282582ce24d9528d278dea4401
+  - enabled: 1
+    path: Assets/Scenes/PurePassthrough.unity
+    guid: 7b6a8af3d4f2d8f43a7303e91f138475
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5cecc86a729a7694a8503da348322a97, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 00d9f9c1da5b53649947a1ba689073b9, type: 2}
