@@ -10,9 +10,9 @@ public class SpacesManager : MonoBehaviour
     [SerializeField] GameManager gameManager;
 
     [Header("Spaces Set Up")]
-    [SerializeField] private SceneAsset lScene;
-    [SerializeField] private SceneAsset rScene;
-    [SerializeField] private SceneAsset passthroughScene;
+    [SerializeField] private Scene lScene;
+    [SerializeField] private Scene rScene;
+    [SerializeField] private Scene passthroughScene;
     private Scene currentSpace;
 
 
@@ -51,7 +51,7 @@ public class SpacesManager : MonoBehaviour
 
     }
 
-    public void LoadSpaceSwap(SceneAsset newScene)
+    public void LoadSpaceSwap(Scene newScene)
     {
         if (newScene == null)
         {
@@ -61,7 +61,7 @@ public class SpacesManager : MonoBehaviour
         SceneManager.LoadSceneAsync(newScene.name);
     }
 
-    public void ActivateSpaceSwap(SceneAsset newScene)
+    public void ActivateSpaceSwap(Scene newScene)
     {
         if (newScene == null)
         {
@@ -72,9 +72,9 @@ public class SpacesManager : MonoBehaviour
         currentSpace = SceneManager.GetActiveScene();
     }
 
-    public SceneAsset GetRightSpace() { return rScene; }
-    public SceneAsset GetLeftSpace() { return lScene; }
-    public SceneAsset GetEmptySpace() { return passthroughScene; }
+    public Scene GetRightSpace() { return rScene; }
+    public Scene GetLeftSpace() { return lScene; }
+    public Scene GetEmptySpace() { return passthroughScene; }
 
 
 }
