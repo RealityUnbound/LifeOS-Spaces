@@ -9,20 +9,20 @@ public class SpacesManager : MonoBehaviour
     public static SpacesManager instance;
     [SerializeField] GameManager gameManager;
 
-    //[Header("Spaces Set Up")]
+    [Header("Spaces Set Up")]
+    [SerializeField] private SceneAsset lScene;
+    [SerializeField] private SceneAsset rScene;
+    [SerializeField] private SceneAsset passthroughScene;
     private Scene currentSpace;
-    [SerializeField] SceneAsset lScene;
-    [SerializeField] SceneAsset rScene;
-    [SerializeField] SceneAsset passthroughScene;
 
-    
+
 
     //[SerializeField] SceneAsset scene1;
     //private SceneAsset currentSpace;
 
     //public List<SceneAsset> spaces = new List<SceneAsset>(); // Deprecated for SceneManager.GetSceneByName()
 
-    Hashtable spaces;
+    //Hashtable spaces;
 
     private void Awake()
     {
@@ -35,7 +35,7 @@ public class SpacesManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+        currentSpace = SceneManager.GetActiveScene();
         //leftSpace = SceneManager.GetSceneByBuildIndex(SceneManager.GetActiveScene().buildIndex - 1); // A different implementation for Scene Management
         //rightSpace = SceneManager.GetSceneByBuildIndex(SceneManager.GetActiveScene().buildIndex + 1);
     }
@@ -51,14 +51,25 @@ public class SpacesManager : MonoBehaviour
 
     }
 
-    public void SpaceSwap(UnityEngine.SceneManagement.Scene newScene)
+    public void LoadSpaceSwap(SceneAsset newScene)
     {
         if (newScene == null)
         {
             print("No Space Available");
             return;
         }
-        SceneManager.LoadSceneAsync(newScene.buildIndex);
+        SceneManager.LoadSceneAsync(newScene.name);
+    }
+
+    public void ActivateSpaceSwap(SceneAsset newScene)
+    {
+        if (newScene == null)
+        {
+            print("No Space Available");
+            return;
+        }
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(newScene.name));
+        currentSpace = SceneManager.GetActiveScene();
     }
 
     public SceneAsset GetRightSpace() { return rScene; }
