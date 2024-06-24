@@ -21198,9 +21198,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1838414552}
-  lScene: {fileID: 102900000, guid: 2c4ca3282582ce24d9528d278dea4401, type: 3}
-  rScene: {fileID: 102900000, guid: 2c4ca3282582ce24d9528d278dea4401, type: 3}
-  passthroughScene: {fileID: 102900000, guid: 7b6a8af3d4f2d8f43a7303e91f138475, type: 3}
+  lScene:
+    m_Handle: 0
+  rScene:
+    m_Handle: 0
+  passthroughScene:
+    m_Handle: 0
 --- !u!1 &1859504884
 GameObject:
   m_ObjectHideFlags: 0
