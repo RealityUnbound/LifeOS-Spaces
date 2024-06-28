@@ -72,6 +72,11 @@ public class SpacesManager : MonoBehaviour
         currentSpace = SceneManager.GetActiveScene();
     }
 
+    public void SwapRight()
+    {
+        SceneManager.LoadScene(2);
+    }
+
     public Scene GetRightSpace() { return rScene; }
     public Scene GetLeftSpace() { return lScene; }
     public Scene GetEmptySpace() { return passthroughScene; }

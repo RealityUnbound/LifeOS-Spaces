@@ -7904,8 +7904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputManager: {fileID: 83775749}
-  swipeRightGesture: {fileID: 0}
-  swipeLeftGesture: {fileID: 0}
+  gestureSequences: []
 --- !u!1 &634353309
 GameObject:
   m_ObjectHideFlags: 0
@@ -24704,7 +24703,7 @@ PrefabInstance:
     - target: {fileID: 7405656233379961561, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
       propertyPath: _fingerFeatureStateProvider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2133556875}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24724,6 +24723,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2a8d5cf844b463aabaed6d6db3da8c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2133556875 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7405656233379961561, guid: 740b5ee262c98df4381adba974c8f978, type: 3}
+  m_PrefabInstance: {fileID: 2133556872}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 870d37507a21e5e42877dca0f61dcd28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2135215829

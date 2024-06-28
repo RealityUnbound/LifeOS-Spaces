@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44202837, g: 0.4502243, b: 0.4737963, a: 1}
+  m_IndirectSpecularColor: {r: 0.44202673, g: 0.4502241, b: 0.47379225, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1550,6 +1550,57 @@ Transform:
   - {fileID: 501357122}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1579079172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1579079173}
+  - component: {fileID: 1579079174}
+  m_Layer: 0
+  m_Name: SpaceManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1579079173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579079172}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 830243675}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1579079174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579079172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4ac2d8148ba7e640a82a3ea85062ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 2098237654}
+  lScene:
+    m_Handle: 0
+  rScene:
+    m_Handle: 0
+  passthroughScene:
+    m_Handle: 0
 --- !u!1 &1656264429
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,6 +2750,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e08504c1d9ec34fbdd09d754ea8b5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2098237653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2098237655}
+  - component: {fileID: 2098237654}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2098237654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098237653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd592d234bcf7984da926fee9dae5ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomManager: {fileID: 0}
+  spacesManager: {fileID: 0}
+  inputManager: {fileID: 0}
+  appManager: {fileID: 0}
+--- !u!4 &2098237655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098237653}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.19900674, y: 0.6327741, z: 0.27916303}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2111900458 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4869577802921675287, guid: ea16c3c8c1688234fa81a4f39339bf1b, type: 3}
@@ -3726,6 +3825,34 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 151556657}
+    - target: {fileID: 3336129398210861563, guid: 9c2d282813c94144c99c645bfff6bf63, type: 3}
+      propertyPath: _whenActivated.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3336129398210861563, guid: 9c2d282813c94144c99c645bfff6bf63, type: 3}
+      propertyPath: _whenActivated.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3336129398210861563, guid: 9c2d282813c94144c99c645bfff6bf63, type: 3}
+      propertyPath: _whenActivated.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1579079174}
+    - target: {fileID: 3336129398210861563, guid: 9c2d282813c94144c99c645bfff6bf63, type: 3}
+      propertyPath: _whenActivated.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3336129398210861563, guid: 9c2d282813c94144c99c645bfff6bf63, type: 3}
+      propertyPath: _whenActivated.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwapRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 3336129398210861563, guid: 9c2d282813c94144c99c645bfff6bf63, type: 3}
+      propertyPath: _whenActivated.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SpacesManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3336129398210861563, guid: 9c2d282813c94144c99c645bfff6bf63, type: 3}
+      propertyPath: _whenActivated.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5127693959060278886, guid: 9c2d282813c94144c99c645bfff6bf63, type: 3}
       propertyPath: _activeStates.Array.size
       value: 4
@@ -3887,6 +4014,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1750093556593399835, guid: 9c2d282813c94144c99c645bfff6bf63, type: 3}
       insertIndex: -1
       addedObject: {fileID: 428570817}
+    - targetCorrespondingSourceObject: {fileID: 1750093556593399835, guid: 9c2d282813c94144c99c645bfff6bf63, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1579079173}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1407881933315742644, guid: 9c2d282813c94144c99c645bfff6bf63, type: 3}
       insertIndex: -1
@@ -4021,3 +4151,4 @@ SceneRoots:
   - {fileID: 1411102447}
   - {fileID: 1762794453}
   - {fileID: 1656264430}
+  - {fileID: 2098237655}
